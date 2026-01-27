@@ -13,9 +13,34 @@
 li[class] {
   color: var(--red);
 }
+li[class="dog"] {
+  color: var(--magenta)
+}
+li[class="parrot"], li[id="cat"] {
+  color: var(--green);
+}
+li[class="donkey"], li[class="cat dog parrot"] {
+  color: var(--royalblue);
+}
+li[class="hedgehog"] {
+  color: var(--violet)
+}
 
 /* Use descendant, child, and sibling selectors for the second part */
 
 section li {
   color: var(--green);
+}
+
+section > div[class="list-food"] > ol > li.first {
+  color: var(--green)
+}
+
+section > div[class="list-food"] > ol > li:nth-child(2),
+section > div[class="list-food"] > ol > li:nth-child(4) {
+  color: var(--magenta)
+}
+
+section > div[class="list-food"] > ol > li:nth-child(3) {
+  color: var(--royalblue)
 }
