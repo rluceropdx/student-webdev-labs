@@ -4,23 +4,51 @@
   --darkgolden: #8f6805;
 }
 
+body {
+  margin: 0px;
+}
+
+main { 
+  box-sizing: content-box;
+  text-align: center;
+  height: 600px;
+  padding-top: 80px;
+}
+
 .box {
   padding: 10px;
   color: var(--white);
 }
 
+.main > section {
+  height: 400px;
+  width: 300px;
+  margin: 5px;
+  display: inline-block;
+  text-align: left;
+}
+
 .static {
   background-color: var(--darkviolet);
+  position: static;
 }
 
 .relative {
   background-color: var(--purple);
+  position: relative;
 }
 
 .absolute {
+  top: 0px;
   background-color: var(--maroon);
+  height: 70px;
+  width: 100%;
+  position: absolute;
 }
 
 .fixed {
   background-color: var(--darkgolden);
+  height: 70px;
+  width: 100%;
+  position: fixed;
 }
