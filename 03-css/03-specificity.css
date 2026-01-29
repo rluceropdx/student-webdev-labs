@@ -20,7 +20,7 @@ section .main::first-line {
 }
 /* Specificity Calculation: 0-1-2 */
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
   color: var(--purple);
 }
 /* Specificity Calculation: 1-2-4 */
