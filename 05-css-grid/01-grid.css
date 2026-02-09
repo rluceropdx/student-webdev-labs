@@ -3,8 +3,29 @@
 }
 
 /* Grid Container 1 */
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 150px auto auto;
+  background-color: #fff;
+}
+
+.grid-container-1 > .grid-item {
+  margin: 5px;
+}
 
 /* Grid Container 2 */
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 150px auto 150px 150px;
+  grid-template-rows: 100px 300px;
+  background-color: #fff;
+  height: 500px
+}
+
+.grid-container-2 > .grid-item {
+  margin: 5px;
+}
+
 
 /* use height: 400px; on the container */
 
